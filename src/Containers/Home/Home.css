@@ -1,0 +1,54 @@
+.carousel-bg {
+    background-image: url('https://overworld.qodeinteractive.com/wp-content/uploads/2019/11/h3-bg-img-1.png');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    /* height: 800px; */
+   box-sizing: content-box;
+    
+    
+}
+
+.carousel-size {
+    display: flex;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.carousel-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    
+    
+   
+}
+
+/* .carousel-img:hover{
+    opacity: 70%;
+   } */
+
+.carousel-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 15vw;
+   
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  

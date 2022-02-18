@@ -1,0 +1,78 @@
+
+.bgc-purple {
+    background-color: #1b0f23;
+}
+
+.dp-flex {
+    display: flex;
+   
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.pad {
+    padding: 8px 120px 8px 120px;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.ff-bebas {
+    font-family: Bebas Neue;
+}
+
+.color-red {
+    color: red;
+}
+
+.fweigth {
+    font-weight: bold;
+}
+
+.fsize {
+    font-size: 50px;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.color-white {
+    color: white;
+    font-size: 15px;
+}
+
+.ff-arial {
+    font-family: arial;
+}
+
+.marg-left {
+    margin-left: 20px;
+    
+}
+
+.letter-space {
+    letter-spacing: .2em;
+}
+
+.al-self {
+    align-self: flex-start;
+}
+
+.tx-dec {
+    text-decoration: none;
+    
+}
+tx-dec :hover {
+        border-top: #6b54b6 5px solid ;
+        transition: all 1s ease-out;
+
+}
+
+.maxH-2em {
+    max-height: 2em;
+}
+

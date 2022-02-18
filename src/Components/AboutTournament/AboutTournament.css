@@ -1,0 +1,45 @@
+.about-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left:15%;
+    margin-right: 25%;   
+    height: 250px;
+    background-color: #1b0f23 ;
+    color: white;
+    margin-top: 50px;
+    /* border-bottom: 1px solid black; */
+}
+
+.h1-box {
+    padding-left: 20px;
+    border-left: 6px solid;
+    border-color: #6b54b6;
+    margin-left: 10px;
+    
+}
+
+.nav-box {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+
+}
+
+button {
+    margin-left: 50px;
+    background-color: transparent;
+    border: none;
+    color: #6b54b6;
+    margin-bottom: 20px;
+   padding-top: 10px;
+
+}
+
+button:hover {
+   
+    border-top: #6b54b6 5px solid ;
+    border-color:  transparent .5;
+    
+}
