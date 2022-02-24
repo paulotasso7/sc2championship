@@ -1,10 +1,11 @@
 import Tournaments from "../../Containers/Tournaments/Tournaments";
+import MatchCard from "../Cards/MatchCard";
 
 const AllMatches = () => {
     return (
         <div>
             <Tournaments/>
-            <h1>ALL MATCHES</h1>
+            <MatchCard/>
         </div>
         
     )

@@ -1,6 +1,10 @@
-import { Swiper, SwiperSlide } from "swiper/react";    
+import { Swiper, SwiperSlide } from "swiper/react"; 
+import { Autoplay } from "swiper";   
+
 import TeamCard from "../Cards/TeamCard";
 import './TeamCarousel.css';
+
+
 
 const TeamCarousel = () => {
     return (
@@ -13,8 +17,8 @@ const TeamCarousel = () => {
         className='carousel-size'
         spaceBetween={45}
         slidesPerView={4}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log('slide change')}
+        // onSwiper={(swiper) => console.log(swiper)}
         loop={true}
         centerInsufficientSlides={true}
         centeredSlides={false}
@@ -22,6 +26,7 @@ const TeamCarousel = () => {
         autoplay={true}
         speed={300}
         style={{width: '60%', display:'flex'}}
+        modules={[Autoplay]}
         >
             <SwiperSlide>
                 <TeamCard/>

@@ -1,5 +1,5 @@
 .card-style {
-    background-color: #20132a; 
+    background-color: rgba(107,84,182,.1); 
     height: 18vw; 
     margin: 20px; 
     width: 12vw; 
@@ -7,7 +7,11 @@
     justify-content: center; 
     align-items:center; 
     box-shadow: 3px 3px 3px  rgb(0, 0, 0, .5) ;
+    position: relative;
+
 }
+
+
 
 .content {
     display: flex;

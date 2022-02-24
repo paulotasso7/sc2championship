@@ -2,7 +2,7 @@ import './Home.css';
 import TeamCarousel from '../../Components/TeamCarousel/TeamCarousel';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade   } from 'swiper';
+import { Autoplay, EffectCoverflow,  } from 'swiper';
 import 'swiper/css';
 
 const Home = ( ) => {
@@ -14,15 +14,16 @@ const Home = ( ) => {
             className='carousel-size'
             spaceBetween={400}
             slidesPerView={2}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)}
             loop={true}
             centerInsufficientSlides={true}
             centeredSlides={true}
             centeredSlidesBounds={true}
+            modules={[Autoplay, EffectCoverflow]}
+            effect={'coverflow'}
             autoplay={true}
-            speed={300}
-            EffectFade={EffectFade}
+            speed={500}
             >
             
                 <SwiperSlide>
@@ -45,7 +46,11 @@ const Home = ( ) => {
                 </SwiperSlide>
             </Swiper>
         </div>
-            <h1 style={{color: 'white', display: 'flex', justifyContent: 'center'}}>BANNER VIDEO</h1>
+            
+            <video className='video-banner' loop={true} autoPlay={true} playsInline={true} muted={true} >
+                <source src="https://www.mmsupports.club/static/media/banner1.fa3ddde7.mp4" type="video/mp4"/>
+                <source src="/static/media/banner1.4c4a31e1.webm" type="video/webm"/>
+            </video>
             <TeamCarousel/>
         </>
     )

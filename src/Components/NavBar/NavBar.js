@@ -4,7 +4,7 @@ import './NavBar.css';
 
 const NavBar = () => {
     return (  
-        <nav className="bgc-purple dp-flex  jc-sb pad ai-center">
+        <nav className="bgc-purple dp-flex  jc-sb pad ai-center" >
             <div className='dp-flex ai-center jc-center' >               
                 <Link className='ff-bebas  fweigth fsize tx-dec' to='/'>
                     <img className='maxH-2em' src='https://overworld.qodeinteractive.com/wp-content/uploads/2020/01/logo-standard-OVERWORLD.png' alt='logo'/>
