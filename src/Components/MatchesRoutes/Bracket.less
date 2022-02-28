@@ -1,9 +1,18 @@
+/*!
+ * Responsive Tournament Bracket
+ * Copyright 2016 Jakub Hájek
+ * Licensed under MIT (https://opensource.org/licenses/MIT)
+ */
+
+/* //
+// GOOGLE FONT
+// --------------------------- */
 @import 'https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700&subset=latin-ext';
 
 
-//
+/* //
 // VARIABLES
-// ---------------------------
+// --------------------------- */
 @breakpoint-xs: 24em;
 @breakpoint-sm: 38em;
 @breakpoint-md: 52em;
@@ -102,7 +111,7 @@ h2 {
   justify-content: center;
   height: 100%;
   min-height: 100%;
-  border-bottom: 1px dashed #e5e5e5;
+  // border-bottom: 1px dashed #e5e5e5;
   padding-bottom: 2em;
   margin-bottom: 2em;
   transition: padding 0.2s ease-in-out, margin 0.2s ease-in-out;
@@ -159,7 +168,7 @@ h2 {
   
   @media (min-width: @breakpoint-sm) {
     padding: 0.5em 1em;
-    // flex-grow: 2;
+    flex-grow: 2;
     width: 100%;
     
     &:nth-child(odd),

@@ -15,7 +15,7 @@ const TeamCarousel = () => {
 
         <Swiper
         className='carousel-size'
-        spaceBetween={45}
+        spaceBetween={40}
         slidesPerView={4}
         // onSlideChange={() => console.log('slide change')}
         // onSwiper={(swiper) => console.log(swiper)}
@@ -25,7 +25,6 @@ const TeamCarousel = () => {
         centeredSlidesBounds={true}
         autoplay={true}
         speed={300}
-        style={{width: '60%', display:'flex'}}
         modules={[Autoplay]}
         >
             <SwiperSlide>

@@ -11,6 +11,7 @@ const Home = ( ) => {
         <>
         <div className='carousel-bg'>
             <Swiper
+            style={{width: '100%'}}
             className='carousel-size'
             spaceBetween={400}
             slidesPerView={2}

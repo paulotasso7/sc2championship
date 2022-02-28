@@ -1,13 +1,11 @@
 import Tournaments from "../../Containers/Tournaments/Tournaments";
-import './Bracket.js';
+import './Bracket.css';
 
 const Bracket = () => {
     return (
         <div>
             <Tournaments />
             <div className="container">
-                <h1>Responsive Tournament Bracket</h1>
-                <h2>Ice hockey at the 1998 Winter Olympics – Men's tournament</h2>
                 <div className="tournament-bracket tournament-bracket--rounded">                                                     
                     <div className="tournament-bracket__round tournament-bracket__round--quarterfinals">
                     <h3 className="tournament-bracket__round-title">Quarterfinals</h3>
