@@ -10,7 +10,7 @@ const TeamCarousel = () => {
     return (
         <>
         <div className="team-title">
-            <h1 style={{color:'white',paddingLeft: '20px', borderLeft:'6px solid', marginLeft: '30px', borderColor: '#6b54b6'}}>MEET THE NOIAS</h1>
+            <h1 style={{color:'white',paddingLeft: '20px', borderLeft:'6px solid', marginLeft: '30px', borderColor: '#6b54b6', fontSize: '2vw'}}>MEET THE NOIAS</h1>
         </div>
 
         <Swiper

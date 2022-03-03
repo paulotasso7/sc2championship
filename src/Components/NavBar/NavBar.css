@@ -1,78 +1,53 @@
-
-.bgc-purple {
-    background-color: #1b0f23;
+.topnav {
+  overflow: hidden;
+  background-color: rgb(27, 15, 35);
+  align-items: center;
 }
 
-.dp-flex {
-    display: flex;
-   
+
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.jc-sb {
-    justify-content: space-between;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.pad {
-    padding: 8px 120px 8px 120px;
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
-.ai-center {
-    align-items: center;
+.topnav .icon {
+  display: none;
 }
 
-.ff-bebas {
-    font-family: Bebas Neue;
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 }
 
-.color-red {
-    color: red;
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
 }
-
-.fweigth {
-    font-weight: bold;
-}
-
-.fsize {
-    font-size: 50px;
-}
-
-.jc-center {
-    justify-content: center;
-}
-
-.color-white {
-    color: white;
-    font-size: 15px;
-}
-
-.ff-arial {
-    font-family: arial;
-}
-
-.marg-left {
-    margin-left: 20px;
-    
-}
-
-.letter-space {
-    letter-spacing: .2em;
-}
-
-.al-self {
-    align-self: flex-start;
-}
-
-.tx-dec {
-    text-decoration: none;
-    
-}
-tx-dec :hover {
-        border-top: #6b54b6 5px solid ;
-        transition: all 1s ease-out;
-
-}
-
-.maxH-2em {
-    max-height: 2em;
-}
-
