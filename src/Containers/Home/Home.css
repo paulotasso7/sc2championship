@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: center;
     height: 30vw;
-    
+    min-height: 15rem;
     
    
 }

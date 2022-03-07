@@ -1,9 +1,8 @@
-import Tournaments from "../../Containers/Tournaments/Tournaments";
 
 const Finished = () => {
     return (
         <div>
-            <Tournaments/>
+            {/* <Tournaments/> */}
             <h1>FINISHED MATCHES</h1>
         </div>
         

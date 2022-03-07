@@ -1,10 +1,9 @@
-import Tournaments from "../../Containers/Tournaments/Tournaments";
 import './Bracket.css';
 
 const Bracket = () => {
     return (
         <div>
-            <Tournaments />
+            {/* <Tournaments /> */}
             <div className="container">
                 <div className="tournament-bracket tournament-bracket--rounded">                                                     
                     <div className="tournament-bracket__round tournament-bracket__round--quarterfinals">

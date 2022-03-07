@@ -8,10 +8,10 @@ import Rank from './Containers/Rank/Rank';
 import Login from './Containers/Login/Login';
 
 //import containers tournaments
-import AllMatches from './Components/MatchesRoutes/AllMatches';
-import Bracket from './Components/MatchesRoutes/Bracket';
-import Upcoming from './Components/MatchesRoutes/Upcoming';
-import Finished from './Components/MatchesRoutes/Finished';
+// import AllMatches from './Components/MatchesRoutes/AllMatches';
+// import Bracket from './Components/MatchesRoutes/Bracket';
+// import Upcoming from './Components/MatchesRoutes/Upcoming';
+// import Finished from './Components/MatchesRoutes/Finished';
 
 
 //import de components
@@ -30,10 +30,10 @@ function App() {
                         <Route path='/rank' element={<Rank/>} />
                         <Route path='/tournaments' element={<Tournaments/>} />
                         <Route path='/login' element={<Login/>} />
-                        <Route path='/tournaments/allmatches' element={<AllMatches/>}/>
+                        {/* <Route path='/tournaments/allmatches' element={<AllMatches/>}/>
                         <Route path='/tournaments/bracket' element={<Bracket/>} />
                         <Route path='/tournaments/upcoming' element={<Upcoming/>} />
-                        <Route path='/tournaments/finished' element={<Finished/>} />
+                        <Route path='/tournaments/finished' element={<Finished/>} /> */}
                     </Routes>
                 <Footer />
           </BrowserRouter>

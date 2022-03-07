@@ -11,9 +11,9 @@ const Home = ( ) => {
         <>
         <div className='carousel-bg'>
             <Swiper
-            style={{width: '100%', minHeight: 'fix-content'}}
+            style={{width: '100%'}}
             className='carousel-size'
-            spaceBetween={80}
+            spaceBetween={100}
             slidesPerView={2}
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}

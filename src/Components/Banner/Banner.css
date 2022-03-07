@@ -16,3 +16,15 @@
     align-items: center;
     
 }
+
+
+/* style={{margin: '10px', fontSize: '3.2vw', color: 'white', borderColor: 'black', padding:'0px 0px 0px 0px ' }} */
+
+.h1-set {
+    margin: 10px;
+    font-size: min(max(30px, 3vw), 100px);
+    color: white;
+    border-color: black;
+    
+}
+

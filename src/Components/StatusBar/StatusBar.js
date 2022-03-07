@@ -12,7 +12,7 @@ const StatusBar = () => {
 
 
     return(
-        <div className='status-bar'>
+        <div className='status-bar' >
             <div className='game-name'>
                 <h3>STARCRAFT 2</h3>
             </div>
