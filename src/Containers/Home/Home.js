@@ -13,7 +13,7 @@ const Home = ( ) => {
             <Swiper
             style={{width: '100%'}}
             className='carousel-size'
-            spaceBetween={400}
+            spaceBetween={100}
             slidesPerView={2}
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}

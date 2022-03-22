@@ -1,7 +1,51 @@
 import './AboutTournament.css'
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import AllMatches from '../MatchesRoutes/AllMatches';
+import Bracket from '../MatchesRoutes/Bracket';
+import Upcoming from '../MatchesRoutes/Upcoming';
+import Finished from '../MatchesRoutes/Finished';
+
 
 const AboutTournament = () => {
+    
+    const [state, setState] = useState(<AllMatches/>);
+
+    // const toBracket = ( ) => {
+    //     setState(<Bracket/>)
+    // }
+
+    // const toAllMatches = ( ) => {
+    //     console.log('ssdf')
+    //     setState(<AllMatches/>)
+    // }
+
+    // const toUpcoming = ( ) => {
+    //     setState(<Upcoming/>)
+    // }
+
+    // const toFinished = ( ) => {
+    //     setState(<Finished/>)
+    // }
+
+    const switchFun = (state) => {
+        switch (state) {
+            case 'allmatches':
+                setState(<AllMatches/>)
+                break;
+            case 'upcoming':
+                setState(<Upcoming/>)
+                break;
+            case 'bracket' :
+                setState(<Bracket/>)
+                break;
+            case 'finished' :
+                setState(<Finished/>)    
+                break;
+            default:
+                setState()
+        }
+    } 
 
     return (
         <div className='about-box'>
@@ -18,18 +62,20 @@ const AboutTournament = () => {
             </div>
             <div className='nav-box'>
                 <nav >
-                    <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments/allmatches'>
-                        <button>ALL MATCHES</button>
-                    </Link>
-                    <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments/bracket'>
-                        <button>BRACKET</button>
-                    </Link>
-                    <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments/upcoming'>
-                        <button>UPCOMING</button>
-                    </Link>
-                    <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments/finished'>
-                        <button>FINISHED</button>
-                    </Link>
+                    {/* <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments'> */}
+                        <button className='btn-about' onClick={() => switchFun('allmatches')}>ALL MATCHES</button>
+                    {/* </Link> */}
+                    {/* <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments' > */}
+                        <button  className='btn-about'onClick={() => switchFun('bracket')}>BRACKET</button>
+                    {/* </Link> */}
+                    {/* <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments'> */}
+                        <button className='btn-about' onClick={() => switchFun('upcoming')}>UPCOMING</button>
+                    {/* </Link>
+                    <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments'
+                    > */}
+                        <button className='button type1' onClick={() => switchFun('finished')}>FINISHED</button>
+                    {/* </Link> */}
+                    {state}
                 </nav>
             </div>
         </div>

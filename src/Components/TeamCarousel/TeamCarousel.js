@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react"; 
-import { Autoplay } from "swiper";   
+import { Autoplay  } from "swiper";   
 
 import TeamCard from "../Cards/TeamCard";
 import './TeamCarousel.css';
@@ -7,10 +7,12 @@ import './TeamCarousel.css';
 
 
 const TeamCarousel = () => {
+const arr = [<TeamCard/>,<TeamCard/>,<TeamCard/>];
+
     return (
         <>
         <div className="team-title">
-            <h1 style={{color:'white',paddingLeft: '20px', borderLeft:'6px solid', marginLeft: '30px', borderColor: '#6b54b6'}}>MEET THE NOIAS</h1>
+            <h1 style={{color:'white',paddingLeft: '20px', borderLeft:'6px solid', marginLeft: '30px', borderColor: '#6b54b6', fontSize: '2vw'}}>MEET THE NOIAS</h1>
         </div>
 
         <Swiper
@@ -25,22 +27,19 @@ const TeamCarousel = () => {
         centeredSlidesBounds={true}
         autoplay={true}
         speed={300}
-        modules={[Autoplay]}
+        modules={[Autoplay ]}
         >
-            <SwiperSlide>
-                <TeamCard/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <TeamCard/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <TeamCard/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <TeamCard/>
-            </SwiperSlide>
+        {
+            arr.map(() => { 
+                return (
+                    <SwiperSlide>
+                        <TeamCard/>
+                    </SwiperSlide>
+                )
+            }
+            )
+        }
         </Swiper>
-        
         </>
 
     )
