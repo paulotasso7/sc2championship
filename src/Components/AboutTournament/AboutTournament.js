@@ -1,5 +1,4 @@
 import './AboutTournament.css'
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import AllMatches from '../MatchesRoutes/AllMatches';
 import Bracket from '../MatchesRoutes/Bracket';
@@ -11,40 +10,19 @@ const AboutTournament = () => {
     
     const [state, setState] = useState(<AllMatches/>);
 
-    // const toBracket = ( ) => {
-    //     setState(<Bracket/>)
-    // }
 
-    // const toAllMatches = ( ) => {
-    //     console.log('ssdf')
-    //     setState(<AllMatches/>)
-    // }
-
-    // const toUpcoming = ( ) => {
-    //     setState(<Upcoming/>)
-    // }
-
-    // const toFinished = ( ) => {
-    //     setState(<Finished/>)
-    // }
-
-    const switchFun = (state) => {
-        switch (state) {
-            case 'allmatches':
-                setState(<AllMatches/>)
-                break;
-            case 'upcoming':
-                setState(<Upcoming/>)
-                break;
-            case 'bracket' :
-                setState(<Bracket/>)
-                break;
-            case 'finished' :
-                setState(<Finished/>)    
-                break;
-            default:
-                setState()
-        }
+    const matchesRouter = (state) => {
+        if(state === 'allmatches') {
+            setState(<AllMatches/>)
+        } else if (state === 'upcoming') {
+            setState(<Upcoming/>)
+        } else if (state === 'bracket'){
+            setState(<Bracket/>)
+        } else if( state === 'finished') {
+            setState(<Finished/>)  
+        } else {
+             setState()
+        }                
     } 
 
     return (
@@ -62,19 +40,11 @@ const AboutTournament = () => {
             </div>
             <div className='nav-box'>
                 <nav >
-                    {/* <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments'> */}
-                        <button className='btn-about' onClick={() => switchFun('allmatches')}>ALL MATCHES</button>
-                    {/* </Link> */}
-                    {/* <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments' > */}
-                        <button  className='btn-about'onClick={() => switchFun('bracket')}>BRACKET</button>
-                    {/* </Link> */}
-                    {/* <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments'> */}
-                        <button className='btn-about' onClick={() => switchFun('upcoming')}>UPCOMING</button>
-                    {/* </Link>
-                    <Link className='ff-bebas  fweigth fsize tx-dec' to='/tournaments'
-                    > */}
-                        <button className='button type1' onClick={() => switchFun('finished')}>FINISHED</button>
-                    {/* </Link> */}
+                   
+                    <button className='btn-about' onClick={() => matchesRouter('allmatches')}>ALL MATCHES</button>                 
+                    <button  className='btn-about'onClick={() => matchesRouter('bracket')}>BRACKET</button>                    
+                    <button className='btn-about' onClick={() => matchesRouter('upcoming')}>UPCOMING</button>                    
+                    <button className='button type1' onClick={() => matchesRouter('finished')}>FINISHED</button>
                     {state}
                 </nav>
             </div>

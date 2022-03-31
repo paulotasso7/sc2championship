@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+STARCRAFT2 CHAMPIONSHIPS
+
+Projeto idealizado com objetivo de tornar-se a melhor plataforma de campeonatos de StarCraft2.
+
+COMO RODAR O PROJETO
+
+O projeto foi construido da seguinte forma:
+- Node v16.13.1
+- Axios
+
