@@ -7,7 +7,7 @@ FrontEnd será alimentado por uma API desenvolvida pelo lider do projeto. Contar
 ### `COMO RODAR O PROJETO`
 
 O projeto foi criado através do bootstrap reate-react-app
-###    `npx create-react-app`
+#    `npx create-react-app`
 
 Primeiramente, deve-se inicializar o NPM no diretorio do projeto.
 Na linha de comando digite:
