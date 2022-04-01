@@ -36,8 +36,7 @@ const arr = [<TeamCard/>,<TeamCard/>,<TeamCard/>];
                         <TeamCard/>
                     </SwiperSlide>
                 )
-            }
-            )
+            })
         }
         </Swiper>
         </>
